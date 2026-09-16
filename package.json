@@ -1,0 +1,23 @@
+{
+  "name": "saucedemo-playwright-tests",
+  "version": "1.0.0",
+  "description": "Suíte de testes automatizados end-to-end para o [SauceDemo](https://www.saucedemo.com/), \r construída com Playwright e organizada em Page Object Model. Inclui também uma camada \r de testes de API com Postman, executada via Newman em pipeline de integração contínua.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedroqueirozr/saucedemo-playwright-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/pedroqueirozr/saucedemo-playwright-tests/issues"
+  },
+  "homepage": "https://github.com/pedroqueirozr/saucedemo-playwright-tests#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^22.20.3"
+  }
+}

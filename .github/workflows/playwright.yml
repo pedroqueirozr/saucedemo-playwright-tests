@@ -19,6 +19,10 @@ jobs:
       run: npx playwright install --with-deps
     - name: Run Playwright tests
       run: npx playwright test
+    - name: Install Newman
+      run: npm install -g newman
+    - name: Run API tests (Postman/Newman)
+      run: newman run postman/saucedemo-collection.json
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:

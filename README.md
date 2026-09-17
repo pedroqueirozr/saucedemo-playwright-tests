@@ -4,6 +4,11 @@ Suíte de testes automatizados end-to-end para o [SauceDemo](https://www.saucede
 construída com Playwright e organizada em Page Object Model. Inclui também uma camada 
 de testes de API com Postman, executada via Newman em pipeline de integração contínua.
 
+> **Nota:** o SauceDemo não expõe API própria (é um site estático de front-end). 
+> Por isso, a camada de testes de API usa a [reqres.in](https://reqres.in), 
+> outra plataforma pública de prática, mantendo o mesmo objetivo de testar 
+> contra ambientes seguros e feitos para esse fim.
+
 ## Stack
 
 - **Playwright** (JavaScript) — testes end-to-end de interface
@@ -13,6 +18,7 @@ de testes de API com Postman, executada via Newman em pipeline de integração c
 ## Estrutura do projeto
 
 saucedemo-playwright-tests/
+
 ├── tests/ # Testes end-to-end (Playwright)
 ├── pages/ # Page Object Model — elementos e ações por tela
 ├── postman/ # Coleção Postman exportada + ambiente

@@ -12,14 +12,13 @@ de testes de API com Postman, executada via Newman em pipeline de integração c
 
 ## Estrutura do projeto
 
-\```
 saucedemo-playwright-tests/
-├── tests/              # Testes end-to-end (Playwright)
-├── pages/              # Page Object Model — elementos e ações por tela
-├── postman/            # Coleção Postman exportada + ambiente
-├── .github/workflows/  # Pipeline de CI (GitHub Actions)
+├── tests/ # Testes end-to-end (Playwright)
+├── pages/ # Page Object Model — elementos e ações por tela
+├── postman/ # Coleção Postman exportada + ambiente
+├── .github/workflows/ # Pipeline de CI (GitHub Actions)
 └── README.md
-\```
+
 
 ## Cenários cobertos
 
@@ -31,16 +30,16 @@ saucedemo-playwright-tests/
 ## Como rodar localmente
 
 **Testes end-to-end (Playwright):**
-\```bash
+```bash
 npm install
 npx playwright test
-\```
+```
 
 **Testes de API (Postman via Newman):**
-\```bash
+```bash
 npm install -g newman
 newman run postman/saucedemo-collection.json
-\```
+```
 
 ## Integração contínua
 
